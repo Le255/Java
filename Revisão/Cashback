@@ -1,0 +1,23 @@
+import java.util.*;
+public class Cashback {
+public static void main(String[] args) {
+	Scanner ler= new Scanner (System.in);
+	int com;
+	System.out.println("Informe o valor da compra:");
+	com=ler.nextInt ();
+	
+	if (com<=100) {
+		System.out.println("Você receberá 5% de cashback");
+	}else if (com<=1000) {
+		System.out.println("Você receberá 8% de cashback");
+		
+	}else if (com<=2000) {
+		System.out.println("Você receberá 10% de cashback");
+		
+	}else if (com<=5000) {
+		System.out.println("Você receberá 12,5% de cashback");
+	}else {
+		System.out.println("Para compras acima de 5000 você receberá 15% de cashback");
+	}
+}
+}
