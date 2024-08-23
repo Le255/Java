@@ -1,0 +1,22 @@
+import java.util.*;
+public class salario {
+public static void main(String[] args) {
+	Scanner ler= new Scanner (System.in);
+	double sal, ir;
+	System.out.println("Digite o salário");
+	sal= ler.nextDouble();
+	if (sal==1434 ) {
+		ir= sal*7.5/100 -107.59;
+		System.out.println(+ir);
+	}else if (sal<=2.586) {
+		ir= sal*15.0/100 -268.84;
+		System.out.println(+ir);
+	}else if(sal<=3582) {
+		ir=sal*22.5/100 -483.84;
+		System.out.println(+ir);
+	}else {
+		ir= sal*27.5/100 -662.94;
+		System.out.println(+ir);
+	}
+}
+}
