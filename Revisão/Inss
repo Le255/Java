@@ -1,0 +1,25 @@
+import java.util.*;
+public class Inss {
+public static void main(String[] args) {
+	Scanner ler= new Scanner (System.in);
+	double ren;
+	System.out.println("Informe sua renda");
+	ren=ler.nextDouble ();
+	
+	if (ren<=1412) {
+		System.out.println("Você deverá recolher 7.5% de INSS");
+		
+	}else if (ren<=2666.68) {
+		System.out.println("Você deverá recolher 9% de INSS");
+		
+	}else if (ren<=4000.03) {
+		System.out.println("Você deverá recolher 12% de INSS");
+		
+	}else if (ren<=7786.02) {
+		System.out.println("Você deverá recolher 14% de INSS");
+		
+	}else {
+		System.out.println("Acima desse valor você deverá recolher 16% de INSS. Essa porcentagem será válida para todos os casos.");
+	}
+}
+}
