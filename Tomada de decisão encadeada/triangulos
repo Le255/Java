@@ -1,0 +1,26 @@
+import java.util.*;
+public class triangulos {	
+	public static void main(String[] args) {
+	    Scanner ler= new Scanner (System.in);
+		double a, b, c;
+		System.out.println("Digite o primeiro valor");
+		a= ler.nextDouble();
+		System.out.println("Digite o segundo valor");
+		b= ler.nextDouble();
+		System.out.println("Digite o terceiro valor");
+		c= ler.nextDouble();
+		
+		if (a==b && b==c) {
+		   System.out.println("Equilátero");
+		}else if (a!=b && b!=c && a!=c) {
+		   System.out.println("Escaleno");
+		}else {
+		  System.out.println("Isóceles");
+		}
+		if (a+b >c && b+c>a && a+c>b) {
+			System.out.println(" ");
+			System.out.println("De acordo com a condição de existência, seus valores formam um triângulo" );
+		}
+		
+	}
+}
