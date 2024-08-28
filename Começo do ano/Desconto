@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class desconto {
+	public static void main(String args[]) {
+		Scanner ler= new Scanner (System.in);
+		double preco, novoPreco, desconto;
+		System.out.println("calcule o cupom");
+		preco= ler.nextDouble(); 
+		desconto= preco/100*5;
+		novoPreco= desconto;
+		System.out.println("apresente o novo preço :" +novoPreco);
+	}
+
+}
