@@ -1,0 +1,21 @@
+import java.util.*;
+public class Idade {
+public static void main(String[] args) {
+	Scanner ler= new Scanner (System.in);
+	int anoNas, anoAtual, i=1, id;
+	while (i<18) {
+
+	System.out.println("Digite o ano de nascimento");
+	anoNas=ler.nextInt();
+	System.out.println("Digite o ano Atual");
+	anoAtual=ler.nextInt();
+	id=anoAtual-anoNas;
+	if (i<=18) {
+		System.out.println("Apresente menor de idade");
+	}else {
+		System.out.println("Apresente maior de idade");
+	}
+	i++;
+	}
+}
+}
