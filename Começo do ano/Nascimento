@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class nascimento {
+	public static void main (String args[]) {
+		Scanner ler= new Scanner (System.in);
+		int anoNascimento, anoAtual, idade;
+		System.out.println ("digite o ano de nascimento");
+		anoNascimento=ler.nextInt();
+		System.out.println ("digite o ano atual");
+		anoAtual=ler.nextInt();
+		idade=anoAtual-anoNascimento;
+		System.out.println("A idade é" +idade);
+	}
+
+}
