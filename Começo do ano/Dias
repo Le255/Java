@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class dias {
+	public static void main(String args []) {
+		Scanner ler= new Scanner (System.in);
+		int dia, mes, ano;
+		System.out.println("digite o numero de dias:");
+		dia=ler.nextInt();
+		System.out.println("digite o numero de meses");
+		mes=ler.nextInt();
+		mes=dia/30;
+		ano=mes/12;
+		System.out.println("o numero de anos é :" +ano);
+		System.out.println("o numero de meses é :" +mes);
+	}
+	
+
+}
