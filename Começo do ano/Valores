@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class valores {
+	public static void main (String args []) {
+	Scanner ler=new Scanner (System.in);
+	int a,b,c ;
+	System.out.println ("digite o valor a");
+	a= ler.nextInt();
+	System.out.println ("digite o valor b");
+	b= ler.nextInt();
+	c=a;
+	a=b;
+	b=c;
+	System.out.println("apresentar os valor de a :" +a );
+	System.out.println("apresentar os valor de b :" +b );
+
+	}
+}
