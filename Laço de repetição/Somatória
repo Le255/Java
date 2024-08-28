@@ -1,0 +1,9 @@
+public class Somatoria {
+public static void main(String[] args) {
+	int i=1, soma=+1;
+	while(i<=5051) {
+		System.out.println(i);
+		i=i + soma;
+	}
+}
+}
