@@ -1,0 +1,31 @@
+package lacoderepeticao;
+import java.util.Scanner;
+public class nascimento {
+	public static void main(String[] args) {
+		Scanner ler = new Scanner (System.in);
+		int anoNas, anoAtual, i=0, id=0, idadeMinima=5000, idadeMaxima=id;
+		
+		for (i=0; i<10; i++){
+			System.out.println("Digite o ano de nascimento:");
+			anoNas=ler.nextInt();
+			
+			System.out.println("Digite o ano atual:");
+			anoAtual=ler.nextInt();
+			
+			id= anoAtual-anoNas;
+			System.out.println("Sua idade é: " +id);
+			
+			if (id>idadeMaxima) {
+				idadeMaxima=id;
+			}
+			if (id<idadeMinima) {
+				idadeMinima=id;
+			}
+		}
+		System.out.println("");
+		System.out.println("O usario mais velho tem " +idadeMaxima+ " anos");
+		System.out.println("O usario mais novo tem " +idadeMinima+ " anos");
+		
+	}
+
+}
