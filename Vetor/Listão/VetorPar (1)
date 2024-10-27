@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class VetorPares {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner (System.in);
+		int i;
+		int a[] = new int [20];
+		int b[] = new int [20];
+		
+		//Lendo o vetor A
+		for (i=0; i<20; i++) {
+			System.out.println("Entre com o "+(i+1)+" valor de a:");
+			a[i] = ler.nextInt();
+		}
+		//Calculando o vetor B par
+		for (i=0; i<20; i++) {
+	     if(a[i]%2==0) {
+	    	 b[i]=a[i];
+	    	 a[i]=0;
+	     }
+	     
+
+		}
+			
+			//Apresentendo o vetor A
+			System.out.print("A = [");
+			for (i=0; i<20; i++) {
+				System.out.print(a[i]+" ");
+			}
+			System.out.print("]\n");
+			
+			//Apresentendo o vetor B 
+			System.out.print("B = [");
+			for (i=0; i<20; i++) {
+				System.out.print(b[i]+" ");
+			}
+			System.out.print("]\n");
+		}
+}
