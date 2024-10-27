@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class VetorPesquisa {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner (System.in);
+		int a[],p,i;
+		a= new int [10];
+		
+		//Lendo A
+		for (i=0;i<10;i++) {
+			System.out.println("Digite o valor do " +(i+1)+ "° número de A");
+			a[i]=ler.nextInt();
+		}
+		
+		//Apresentando pesquisa
+		System.out.println("Qual valor você está procurando?");
+		p=ler.nextInt();
+		
+		//Cálculo da pesquisa
+		for (i=0;i<10;i++) {
+		   if (p==a[i]) {
+			System.out.println("O seu valor está armazenado na posição " +a[i]+ " de A");
+		}
+		}
+	}
+
+}
