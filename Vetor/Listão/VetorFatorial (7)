@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class VetorFatorial {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int f=1, i, j=0;
+		int a[] = new int [15];
+		int b[] = new int [15];
+		
+		//Lendo o vetor A
+		for(i=0; i<15; i++){
+			System.out.println("Escreva o valor do " +(i+1)+ "° elemento de A");
+			a[i]=ler.nextInt();
+			System.out.println();
+			}
+		
+		//Calculando o fatorial
+		for(i=0; i<15; i++) {
+			f=1;
+			for(j=1; j<=a[i]; j++ ) {
+				f=f*j;
+			}
+			b[i]=f;
+		}
+
+		//Apresentendo o vetor A e o Fatorial
+		System.out.print("A= [");
+		
+		for(i=0; i<15; i++) {
+			System.out.print(a[i]+" ");
+		}
+		System.out.println("]\n");
+		System.out.println(" ");
+		System.out.print("Fatorial de cada valor de 'A'= [");
+		
+		for(i=0; i<15; i++) {
+			System.out.print(b[i]+" ");
+		}
+		System.out.println("]\n");
+		
+	}
+
+}
+
