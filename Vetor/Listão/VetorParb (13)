@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class VetorParb {
+
+	public static void main(String[] args) {
+		Scanner ler=new Scanner (System.in);
+
+		boolean p;
+		p=true;
+		int a[],b[],c[],i; 
+		a=new int[10];
+		b=new int[10];
+		
+		//Lendo A e calculando B
+		for (i=0 ; i<10 ; i++) {
+			System.out.println("digite o valor do " +(i+1)+ "° número de A");
+			a[i]= ler.nextInt();
+			}
+		for (i=0; i<10 ; i++) {
+			if (a[i]%2==0) {
+				b[i]=1;
+		}else
+			b[i]=0;
+		}
+		
+		//Apresentando A e B
+		System.out.print("A = [");
+		for (i=0; i<10;i++) {
+			System.out.print(a[i]+ " ");
+		}
+		System.out.print("]\n");
+		
+		System.out.print("B = [");
+		for (i=0; i<10;i++) {
+			System.out.print(b[i]+ " ");
+		}
+		System.out.print("]\n");
+
+	}
+}
+
+
