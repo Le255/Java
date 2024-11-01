@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class VetorDivisores {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner (System.in);
+		int i, r;
+		int a[] = new int [10];
+		
+		//Lendo o vetor A 
+		for(i=0; i<10; i++) {
+			System.out.println("Entre com o "+(i+1)+" valor de a:");
+			a [i] = ler.nextInt();
+		}
+		
+		//Calculando os divisores
+		for (i=0; i<10; i++) {
+			System.out.println("A = " +a[i]+ " ");
+			System.out.print("Divisores de A:[");
+			for (r=1; r<=a[i]; r++) {
+				if (a[i]%r==0) {
+					System.out.print(r+ " ");
+				}
+			}
+				System.out.println("]\n");
+				
+			}
+		}
+		
+
+}
