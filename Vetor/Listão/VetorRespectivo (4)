@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class VetorRespectivo {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner (System.in);
+		int i, n;
+		int a [] = new int [10];
+		
+			//Lendo o vetor A
+			for (i=0; i<10; i++) {
+				System.out.println("Entre com o "+(i+1)+"° valor de a:");
+				a[i] = ler.nextInt();
+			}
+			
+			//Calculando os pares
+			for (i=0; i<10; i++) {
+				System.out.println();
+				System.out.print("Os pares de 0 até " +a[i]+ " são: ");
+				for (n=0; n<=a[i]; n += 2) {
+						System.out.println(n);
+						
+				}
+			}
+		
+
+	}
+
+}
