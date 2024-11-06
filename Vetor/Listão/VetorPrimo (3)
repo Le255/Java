@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class VetorPrimo {
+
+	public static void main(String[] args) {
+		Scanner ler= new Scanner(System.in);
+		int i, n=10;
+		int a[] = new int [n];
+		
+		//Lendo o vetor A
+		for(i=0; i<n; i++) {
+			System.out.println("Entre com o "+(i+1)+"° valor de A:");
+			a [i] = ler.nextInt();
+		}
+		
+		//Verificando os primos
+		for (i=0; i<n; i++) {
+			int numeros = a[i];
+			int div = 0;
+			
+			for (int p =1; p<=numeros; p++) {
+				if (numeros % p == 0) {
+					div++;
+				}
+			}
+		//Verificando se é divisivel por 2
+			if (div == 2) {
+				System.out.println(numeros+ " É um número primo");
+			}else {
+				System.out.println(numeros+ " Não é um número primo");
+				}
+		}
+		
+		//Apresentendo o vetor A
+		System.out.print("A = [");
+		for (i=0; i<10; i++) {
+			System.out.print(a[i]+" ");
+		}
+		System.out.print("]\n");
+	}
+
+}
