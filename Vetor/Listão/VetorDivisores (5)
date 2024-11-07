@@ -22,8 +22,9 @@ public class VetorDivisores {
 				}
 			}
 				System.out.println("]\n");
-				
 			}
+
+		ler.close();
 		}
 		
 
