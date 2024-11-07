@@ -39,6 +39,8 @@ public class VetorDifereca {
 			System.out.print(c[i]+ " ");
 		}
 		System.out.print("]\n");
+
+		ler.close();
 		}
 
 }
