@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class VetorSomatoria {
+	public static void main(String[] args) {
+		Scanner ler =new Scanner(System.in);
+		int i;
+		int a[] = new int [10];
+		int b[] = new int [10];
+		
+		//Ler o Vetor A
+		for (i=0; i<10; i++) {
+			System.out.println("digite o valor do " +(i+1)+ "° número de A");
+			a[i] = ler.nextInt();
+		}
+		
+		//Calculo do vetor B
+		for (i=0; i<10; i++) {
+			b[i]=0;
+			for (int s = i; s<10; s++) {
+				b[i] += a[s];
+			}
+		}
+		
+		//Apresentação dos vetores A e B
+		
+		System.out.print("Vetor A: ");
+		for (i=0; i<10; i++) {
+			System.out.print(a[i]+ " ");
+		}
+		System.out.println();
+		
+		System.out.print("Vetor B: ");
+		for (i=0; i<10;i++) {
+			System.out.print(b[i]+ " ");
+		}
+		System.out.println();
+		
+		ler.close();
+}
+}
