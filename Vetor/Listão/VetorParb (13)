@@ -4,8 +4,6 @@ public class VetorParb {
 	public static void main(String[] args) {
 		Scanner ler=new Scanner (System.in);
 
-		boolean p;
-		p=true;
 		int a[],b[],c[],i; 
 		a=new int[10];
 		b=new int[10];
@@ -35,6 +33,7 @@ public class VetorParb {
 		}
 		System.out.print("]\n");
 
+		ler.close();
 	}
 }
 
