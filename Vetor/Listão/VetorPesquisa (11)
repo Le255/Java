@@ -22,6 +22,7 @@ public class VetorPesquisa {
 			System.out.println("O seu valor está armazenado na posição " +a[i]+ " de A");
 		}
 		}
+		ler.close();
 	}
 
 }
