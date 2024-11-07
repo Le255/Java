@@ -14,6 +14,7 @@ public class VetorPotencia {
 		}
 		System.out.print("]");
 
+		ler.close();
 	}
 
 }
