@@ -37,8 +37,8 @@ public class VetorFatorial {
 			System.out.print(b[i]+" ");
 		}
 		System.out.println("]\n");
-		
-	}
 
+		ler.close();
+	}
 }
 
