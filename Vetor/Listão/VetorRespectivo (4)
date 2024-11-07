@@ -21,8 +21,8 @@ public class VetorRespectivo {
 						
 				}
 			}
-		
 
+			ler.close();
 	}
 
 }
