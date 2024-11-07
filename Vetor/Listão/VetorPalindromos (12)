@@ -19,6 +19,6 @@ public class VetorPalindromos {
 					System.out.println("Não é Palindromo");
 				}
 				
+				ler.close();
 			}
 }
-
