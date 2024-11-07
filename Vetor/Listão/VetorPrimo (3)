@@ -36,6 +36,8 @@ public class VetorPrimo {
 			System.out.print(a[i]+" ");
 		}
 		System.out.print("]\n");
+
+		ler.close();
 	}
 
 }
