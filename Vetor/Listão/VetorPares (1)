@@ -12,16 +12,14 @@ public class VetorPares {
 			System.out.println("Entre com o "+(i+1)+" valor de a:");
 			a[i] = ler.nextInt();
 		}
+
 		//Calculando o vetor B par
 		for (i=0; i<20; i++) {
 	     if(a[i]%2==0) {
 	    	 b[i]=a[i];
 	    	 a[i]=0;
 	     }
-	     
-
-		}
-			
+	}	
 			//Apresentendo o vetor A
 			System.out.print("A = [");
 			for (i=0; i<20; i++) {
@@ -35,5 +33,7 @@ public class VetorPares {
 				System.out.print(b[i]+" ");
 			}
 			System.out.print("]\n");
+
+			ler.close();
 		}
 }
